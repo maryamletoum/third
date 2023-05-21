@@ -32,12 +32,15 @@ if (person != null)
 var age = prompt("Please enter your age", "xx");
 	
 if (age >= 18 && age <80) 
-{  alert(   "you're old enough to adopt one of our pets!");
+{  alert(  person + "you're old enough to adopt one of our pets!");
 }
 	
 if (age > 80) 
-{  alert(  " you're too old to adopt one of our pets :(");
-}	
+{  alert( person + " you're too old to adopt one of our pets :(");
+}
+if (age < 18) 
+{  alert( person + " you're not old enough to adopt one of our pets :(");
+}
 
   </SCRIPT>
 
