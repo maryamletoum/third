@@ -28,15 +28,28 @@ var person = prompt("Please enter your name", "Name");
 if (person != null) 
 {  alert(    "Hello " + person + "! Welcome To PetBestie Website!");
 }
-</SCRIPT> 
+  <script>
+	  
+    function checkAge() {
+      var age = parseInt(document.getElementById("age").value);
+      
+      if (isNaN(age)) {
+        alert("Please enter a valid age");
+      } else if (age < 18) {
+        alert("you're not old enough to adopt a pet :(");
+      } else {
+      
+        alert("Welcome! You are old enough to adopt one of our pets");
+      }
+    }
+  </script>
+
+  <h1>Age Verification</h1>
+  <label for="age">Enter your age:</label>
+  <input type="text" id="age" />
+  <button onclick="checkAge()">Submit</button>
 
 
-
-
-
-
-
-    
     <h1><p align="center"><input type="text" placeholder="search & find ur pet bestie <3 " size =100></h1><br><br>
   
  <h2><p align="center">
